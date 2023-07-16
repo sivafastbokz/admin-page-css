@@ -1,16 +1,15 @@
 import React from "react";
-import Servicelist from "./servicelist";
-import Header from "./header";
-import Footer from "./footer";
+import ServiceList from "./ServiceList";
+import Header from "./Header";
+import Footer from "./Footer";
  
-
+const companyName = 'MacAppStudio'
 
 function App(){
-    const companyName = 'Demosalon'
     return(
         <React.Fragment>
          <Header brand={companyName}/>
-         <Servicelist/>
+         <ServiceList/>
          <Footer brand={companyName}/>
         </React.Fragment>
     ) 
