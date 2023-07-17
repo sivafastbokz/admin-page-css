@@ -4,33 +4,44 @@
     padding: 25px;
     line-height: 2;
     display: flex;
-    border-top: 3px solid gainsboro;
-    border-bottom:2px solid gainsboro ;
-    padding-left: 150px;
-    padding-right: 155px;
+    flex-wrap: nowrap;
+    border-top: 3px solid #f2f2f2;
+    border-bottom:2px solid #e4e4e4 ;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.nav2{
+    display: contents;
 }
 
 .nav2 li{
    list-style-type: none;
+  
 }
   
 .nav2 a{
    text-decoration: none;
-   color: black;
+   color:#2b2b2b;
 }
-  
-h4{
+ 
+.nav2 a :hover{
+    color: black;
+}
+
+.span{
     margin-bottom: 5px;
+    font: 15px/30px 'AvenirNext-Medium',sans-serif;
+    font-weight: 550;
+    cursor: pointer;
 }
   
 .nav2{
     width: 25%;
     padding: 0 15px;
-  
 }
 
 .footer-col{
-    margin-left: 180px;
+    margin-left: 240px;
     margin-top: 50px;
     padding: 1px;
 }
@@ -41,24 +52,43 @@ h4{
   
 .footer-col a{
     text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 450;
+    font-size: medium;
+}
+
+.footer :hover{
     color: black;
-    font-weight: 500;
 }
 
 .ad{
     font-weight: bolder;
     font-size: x-large;
+    /* margin-bottom: 10px; */
+    color: black;
 }
 
 .socialmedia{
-    display: flex;
-    margin-left: 400px;
-    margin-top: 80px;
-    gap: 15px;
+    margin-left: 300px;
+    margin-top: 55px;   
 }
 
 .socialmedia i{
     color: black;
+}
+
+.socialmedia li{
+    list-style-type: none;
+}
+
+.socialmedia ul{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.socialmedia h2{
+    font: 17px/30px 'AvenirNext-SemiBold',sans-serif;
+    font-weight: 550;
 }
 
 .copyright{
@@ -68,7 +98,8 @@ h4{
     padding: 1rem;
     background: white;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;

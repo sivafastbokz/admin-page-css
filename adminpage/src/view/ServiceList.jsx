@@ -28,7 +28,6 @@ function ServiceList() {
           </div>
         ))}
     </div>
-  
    </React.Fragment>
   );
 }

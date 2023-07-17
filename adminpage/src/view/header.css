@@ -5,13 +5,13 @@
 
 .header{
     background: white;
-    height: 5rem;
+    height: 5.5rem;
     display: flex;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid gainsboro;
-    padding-left: 10.5rem;
-    padding-right: 10.5rem;
+    border-bottom: 1px solid #ececec;
+    padding-left: 10rem;
+    padding-right: 10rem;
     position: fixed;
     top: 0;
 }
@@ -25,14 +25,17 @@
     display: inline-block;
     list-style-type: none;
     display: inline-flex;
-    gap: 72px;
+    gap: 30px;
 }
   
 .nav ul li{
     display: inline-block;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 550; 
+    font:'AvenirNext-SemiBold',sans-serif;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
   
 .nav a{
@@ -42,6 +45,8 @@
 .nav button{
     background-color: black;
     color: white;
-    padding: 8px;
+    padding: 10px;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 }

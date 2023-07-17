@@ -3,10 +3,11 @@ import HeaderReUse from '../reUseComponent/HeaderReUse';
 import './header.css'
 
 const links = [
-  {href:'Who are we?',label:'Who are we?'},
+  {href:'Who we are?',label:'Who we are?'},
   {href:'What we do?',label:'What we do?'},
   {href:'How we do it?',label:'How we do it?'},
-  {href:'SuccessStoroes',label:'Success Storoes'}
+  {href:'SuccessStoroes',label:'Success Stories'},
+  {href:'For Enterprises',label:'For Enterprises'}
 ]
 
 function Header(props){
