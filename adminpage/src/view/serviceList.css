@@ -7,14 +7,14 @@
 .flex{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   margin: auto; 
   width: 100%;
   border: 2px solid black;
   border: none; 
-  margin-top:280px;
+  margin-top:230px;
   padding-left: 12rem;
   padding-right: 12rem;
 }
@@ -22,11 +22,14 @@
 .container{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 20px;
-  height: 80px;
   border: 1px solid #e5e5e5;
   min-width: 300px;
 }
 
-
+@media (max-width:425px){
+  .flex{
+    margin-top: 120px;
+  }
+}

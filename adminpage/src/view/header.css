@@ -52,3 +52,13 @@
     border: none;
     cursor: pointer;
 }
+
+@media (max-width:425px){
+    .header{
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+}
