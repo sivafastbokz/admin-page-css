@@ -24,7 +24,9 @@ function Header(props){
             })}
             <li><button>Get a Proposal</button></li>
           </ul>
+          
         </nav>
+        <button className='btn-icon'><i class="fa-solid fa-bars fa-lg"></i></button>
       </header>
         </React.Fragment>
     )

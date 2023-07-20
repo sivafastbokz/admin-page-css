@@ -19,6 +19,7 @@
 .nav{
     flex: 1;
     text-align: right;
+    position: relative;
     
 }
   
@@ -52,13 +53,53 @@
     border: none;
     cursor: pointer;
 }
+.btn-icon{
+    padding: 6px;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 35%;
+    right: 25px;
+    display: none;
+}
 
-@media (max-width:425px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .header{
         padding-left: 2rem;
         display: flex;
         align-items: center;
         position: fixed;
         top: 0;
+    }
+    .nav ul{
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid black;
+    }
+    
+    .nav li{
+        text-align: center;
+        margin: auto;
+    }
+
+    .nav li a{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-expand ul{
+        display: block;
+    }
+   
+    .btn-icon{
+       display: block;
     }
 }
