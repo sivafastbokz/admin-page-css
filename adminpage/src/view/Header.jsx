@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderReUse from '../reUseComponent/HeaderReUse';
 import './header.css'
 
@@ -11,11 +11,13 @@ const links = [
 ]
 
 function Header(props){
+     const[showNavBar,setShowNavBar]=useState(false);
+
     return(
         <React.Fragment>
         <header className='header'>
         <h2>{props.brand}</h2>
-        <nav className='nav'>
+        <nav className={showNavBar ? 'nav expand': 'nav'}>
           <ul>
             {links.map((link)=>{
              return(
@@ -24,9 +26,8 @@ function Header(props){
             })}
             <li><button>Get a Proposal</button></li>
           </ul>
-          
         </nav>
-        <button className='btn-icon'><i class="fa-solid fa-bars fa-lg"></i></button>
+        <button className='btn-icon' onClick={()=>{setShowNavBar(!showNavBar)}}><i class="fa-solid fa-bars fa-lg"></i></button>
       </header>
         </React.Fragment>
     )

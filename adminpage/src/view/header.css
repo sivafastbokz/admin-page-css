@@ -19,8 +19,6 @@
 .nav{
     flex: 1;
     text-align: right;
-    position: relative;
-    
 }
   
 .nav ul{
@@ -74,29 +72,36 @@
         position: fixed;
         top: 0;
     }
+
     .nav ul{
         display: none;
-        position: absolute;
-        top: 60px;
+        top: 86px;
         left: 0;
+        position: fixed;
+        height: 100%;
         flex-direction: column;
         width: 100%;
-        background-color: white;
+        background-color:white;
         border-top: 1px solid black;
     }
     
-    .nav li{
+    .nav ul li{
         text-align: center;
         margin: auto;
+        display: block;
+        line-height: 60px;
+     
     }
 
     .nav li a{
         width: 100%;
-        padding: 1rem;
+        padding: 1.5rem ;
+        padding: 0;
     }
 
-    .nav-expand ul{
+    .nav.expand ul{
         display: block;
+
     }
    
     .btn-icon{

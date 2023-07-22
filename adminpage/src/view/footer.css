@@ -5,8 +5,6 @@
     line-height: 2;
     display: flex;
     width: 100%;
-    /* flex-wrap: wrap; */
-    /* gap:1.5rem; */
     border-top: 3px solid #f2f2f2;
     border-bottom:2px solid #e4e4e4 ;
     padding-left: 10rem;
@@ -113,7 +111,6 @@
         flex-wrap: wrap;
         padding-left: 2rem;
         margin-top: 50px;
-        
     }
 
     .footer-col{
