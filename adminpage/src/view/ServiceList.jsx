@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axiosClient from '../helper/axiosClient';
 import ServiceReUse from '../reUseComponent/ServiceReUse';
 import './serviceList.css';
 
@@ -8,7 +8,7 @@ function ServiceList() {
 
   const serviceData=async()=>{
     try {
-      await axios.get('http://localhost:5000/servicelist').then((res)=>{
+      await axiosClient.get('/servicelist').then((res)=>{
            setServiceList(res.data)
       })
     } catch (error) {
